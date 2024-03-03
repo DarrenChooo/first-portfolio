@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        Website for FED CA1 Assignment (Feedback Page) HTML
+        Author : Darren Choo
+        Date : 30/5/2021
+
+        Filename: feedback.html
+    -->
+    <meta charset="UTF-8">
+    <meta name="description" content="FED CA1 Assignment">
+    <meta name="author" content="Darren Choo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Feedback</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Autour+One&display=swap" rel="stylesheet"> 
+    <link href="../css/layout.css" rel = "stylesheet" />
+    <link href="../css/feedback.css" rel = "stylesheet"/>
+    <script src="../js/backToTop.js" defer></script>
+</head>
+
+<body>
+    <!--
+        Navigation of the whole website - 1st part of home page.
+        For example, when clicked on 'Home' it will bring you to index.html, etc.
+    -->
+
+    <div class="container-fluid col-md-12 g-0">
+        <nav class="navbar bg-primary navbar-expand-sm">
+            <a class="navbar-brand ms-3" href= "../html/index.html"><img src= "../images/ca_logo.png"  alt="Darren Choo's Logo" width="160"/></a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMenu" 
+                    aria-controls="toggleMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+        <!--
+            At 'sm' breakpoint, navigation bar will collapsed forming a 'Hamburger' icon. 
+            This hamburger icon can be clicked to drop down the navigation bar for user using a phone landscape size.
+        -->
+        <div class="collapse navbar-collapse" id="toggleMenu">
+            <ul class="navbar-nav mt-md-1 text-light ms-auto">
+                <li><a class="nav-link text-md-center text-light mx-3" href="../html/index.html">Home</a></li>
+                <li><a class="nav-link text-md-center text-light mx-3" href="../html/myjourney.html">My Journey</a></li>
+                <li><a class="nav-link text-md-center text-light mx-3" href="../html/lifeatsp.html">Life at SP</a></li>
+                <li><a class="nav-link text-md-center text-light mx-3" href="../html/career.html">Career</a> </li>
+                <li><a class="nav-link text-md-center text-light mx-3" href="../html/feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+        </nav>
+    </div>
+
+    <!--This div contains all the forms in one container.This uses Bootstrap 5 form-->
+    <div class="rectangle container col-md-10 col-lg-6 mt-5">
+        <form class="was-validated">
+            <div class="row row-cols-lg-2">
+            <h1 class="col-12 offset-lg-3 offset-md-1 mt-3">Feedback Form</h1>
+            <div class="col-md-10 mt-4 mx-auto">
+                <!--Input forms for Name of user-->
+                <div class="input-group">
+                    <span class="input-group-text" id="input1">Name:</span>
+                    <input type="text" class="form-control" placeholder="Enter Name" aria-label="Enter Name" aria-describedby="input1" required>
+                    <div class="invalid-feedback">Please enter a name</div>
+                    <div class="valid-feedback">Looks good!</div>
+                </div>
+            </div>
+
+            <div class="col-md-10 mt-4 mx-auto">
+                <!--Input forms for E-mail of user-->
+                <div class="emailForm input-group">
+                    <span class="input-group-text" id="input2">E-mail:</span>
+                    <input type="text" class="form-control" id="email" placeholder="Enter E-mail" aria-label="Enter E-mail" aria-describedby="input2" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    <div class="invalid-feedback">Please enter a valid E-mail address</div>
+                    <div class="valid-feedback">Looks good!</div>
+                </div>
+            </div>
+            
+            <!--Selection form for user about where did he hear about me-->
+            <div class="col-md-10 mt-4 mx-auto">
+                <select class="form-select" aria-label="Select" required>
+                    <option value="">Where did you hear about me?</option>
+                    <option value="1">Social Meida</option>
+                    <option value="2">Word of Mouth</option>
+                    <option value="3">TV</option>
+                    <option value="4">Search Engine</option>
+                    <option value="5">Others</option>
+                </select>
+                <div class="invalid-feedback">Please select an option</div>
+                <div class="valid-feedback">Looks good!</div>
+            </div>
+            
+            <!--Custom radio button for user.-->
+            <div class="col-12 row mt-5 ms-lg-5 ms-md-3">
+                <h5 class="col fw-bold mt-lg-3">Was the information useful?</h5>
+                <div class="col">
+                    <div class="form-check form-check-inline ms-lg-5 mt-md-2">
+                        <input type="radio" class="btn-check" name="radio1" id="input4" checked>
+                        <label class="btn rounded rounded-pill btn-outline-success" for="input4">
+                            Yes
+                        </label>
+                        <input type="radio" class="btn-check " name="radio1" id="input5" >
+                        <label class="btn rounded rounded-pill btn-outline-danger" for="input5">
+                            No
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!--Custom radio button for user.-->
+            <div class="col-12 row mt-5 ms-lg-5 ms-md-3">
+                <h5 class="col fw-bold mt-lg-3">Did you have any trouble navigating around?</h5>
+                <div class="col">
+                    <div class="form-check form-check-inline ms-lg-5 mt-md-4">
+                        <input type="radio" class="btn-check" name="radio2" id="input6" checked>
+                        <label class="btn rounded rounded-pill btn-outline-success" for="input6">
+                            Yes
+                        </label>
+                        <input type="radio" class="btn-check " name="radio2" id="input7" >
+                        <label class="btn rounded rounded-pill btn-outline-danger" for="input7">
+                            No
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!--Range slider for user.-->
+            <div class="col-md-10 mx-md-auto mt-5">
+                <label for="range1" class="form-label fw-bold mb-3">
+                        How likely are you to recommend my website to a friend?
+                </label>
+                <input type="range" class="form-range" min="0" max="10" id="range1">
+                <div class="row">
+                    <p class="col">Not Likely</p>
+                    <p class="col offset-lg-7 offset-md-2">Very Likely</p>
+                </div>
+            </div>
+            
+            <!--Check button for user.-->
+            <div class="col-md-10 mt-4 mx-auto form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label fw-bold ms-3 text-dark" for="flexCheckDefault">
+                    Check this for more information from me!
+                </label>
+            </div>
+            
+            <!--Input form for feedback from user. Uses Bootstrap 5  floating labels.-->
+            <div class="col-10 mx-auto mt-4 form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingText" style="height: 125px" required></textarea>
+                <label class="ms-3">Tell me more about your experience!</label>
+                <div class="invalid-feedback">Please enter a message in the text area</div>
+                <div class="valid-feedback">Thank you for your feedback!</div>
+            </div>
+
+            <div class="col-5 mx-auto mt-5 mb-5">
+                <button type="submit" class="confetti-button customButton1 btn rounded-pill me-lg-5 fw-bold">Submit</button>
+                <button type="reset" class="customButton2 btn rounded-pill ms-md-5 fw-bold">Reset</button>
+            </div>
+        </div>
+    </form>
+    </div>
+
+    <!--This is a back top top function, explanation will be in javascript file.-->
+    <button class="px-3 py-1 rounded rounded-circle" onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+    <footer>
+        <!--
+            Footer of the website, there are navigation links at the left for the user.
+            When user clicks on navigation links it will open in the same page,
+
+            Side note: I did not link my personal social media links and number to these navigation as i want to keep my social media private and number private. 
+            However, i linked the social medias to SP's as it is more beneficial for my target audience as they are more keen on SP than myself.
+            Also, the number is a fake number. (9876 1234)
+
+            but when user clicks on social media links (Instagram,Youtube) it will open in another page.
+            Also, under 'Contact Me' there is a number and an email, when clicked it will call the number or open the user mailto and mail to the email
+            - (last) part of Feedback page.
+        -->
+    <div class="row mt-5 bg-primary col-lg-12 g-0">
+        <div class="col-lg-3 col-md-12 text-lg-start text-center ms-lg-5 my-3">
+            <ol>
+                <li class="py-1"><a href="../html/index.html">Home</a></li>
+                <li class="py-1"><a href="../html/myjourney.html">My Journey</a></li>
+                <li class="py-1"><a href="../html/lifeatsp.html">Life at SP</a></li>
+                <li class="py-1"><a href="../html/career.html">Career</a> </li>
+                <li class="py-1"><a href="../html/feedback.html">Feedback</a></li>
+            </ol>
+        </div>
+
+            <div class="col-lg-5 col-md-12 text-center mt-5">
+                <a class="mx-2" href="https://www.instagram.com/singaporepoly/" target="_blank">
+                    <img src="../images/ca_instagram.png" alt="Instagram Logo"></a>
+                    <!-- Image for instagram logo above - https://www.flaticon.com/free-icon/instagram_2111491 -->
+                <a class="mx-2" href="https://t.me/singaporepoly" target="_blank">
+                    <img src="../images/ca_telegram.png" alt="Telegram Logo"></a>
+                    <!-- Image for telegram logo above - https://www.flaticon.com/free-icon/telegram_2111812?term=telegram&page=1&position=12&page=1&position=12&related_id=2111812&origin=search -->
+                <a class="mx-2" href="https://www.youtube.com/singaporepolytechnic" target="_blank">
+                    <img src="../images/ca_youtube.png" alt="Youtube Logo"></a>
+                    <!-- Image for youtube logo above - https://www.flaticon.com/free-icon/youtube_1077046?term=youtube&page=1&position=5&page=1&position=5&related_id=1077046&origin=search -->
+                <a class="mx-2" href="https://twitter.com/SingaporePoly?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                    <img src="../images/ca_twitter.png" alt="Twitter Logo"></a> 
+                    <!-- Image for twitter logo above - https://www.flaticon.com/free-icon/twitter_2111819?term=twitter&page=1&position=12&page=1&position=12&related_id=2111819&origin=search -->
+                    <hr class="text-light">
+                <p>
+                    &copy; 2021 Darren Choo
+                </p>     
+            </div>  
+    
+            <div class="col-lg-3 col-md-12 ms-lg-5 mt-5 text-center">
+                <p class="fs-5">
+                    Contact Me
+                </p>
+                <p>
+                    <a class="text-decoration-none" href= "tel:+6598761234">9876 1234</a>
+                </p>
+                <p>
+                    <a class="text-decoration-none" href= "mailto:DARRENCHOO.20@ichat.sp.edu.sg">DARRENCHOO.20@ichat.sp.edu.sg</a>
+                </p>
+            </div>
+    </div>
+    </footer>
+    
+    <!--Linking of Javascript files-->
+    <script src="../js/backToTop.js"></script>
+
+    <!--Bootstrap Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+
+</html>

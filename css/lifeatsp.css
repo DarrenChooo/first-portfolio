@@ -1,0 +1,18 @@
+@charset "utf-8";
+/*
+Website for FED CA1 Assignment - Layout (Life at SP Page) CSS
+Author : Darren Choo
+Date : 8/4/2021
+
+Filename: lifeatsp.css
+*/
+
+/* Text Styles */
+p {
+    line-height: 2.1em;
+}
+
+/* CSS graphic effects - box shadow for image*/
+figure img {
+    box-shadow: 2px 5px 16px 0px #0B325E;
+}

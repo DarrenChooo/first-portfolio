@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/*
+Website for FED CA1 Assignment - Layout (Career Page) CSS
+Author : Darren Choo
+Date : 8/4/2021
+
+Filename: career.css
+*/
+
+
+.carousel * {
+    line-height: 1.8em;
+}
+
+thead, .subHeader {
+    background: #ff5757;;
+}
+
+tbody {
+    background: #ffdad8;
+}

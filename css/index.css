@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+/*
+Website for FED CA1 Assignment - Layout (Index Page) CSS
+Author : Darren Choo
+Date : 8/4/2021
+
+Filename: index.css
+*/
+
+/* Values, Interest and Personality text Styles */
+.VIP p {
+    line-height: 1.9em;
+}
+
+/* At laptop size breakpoint CSS activated, however, in tablet size and below CSS deactivated */
+@media (min-width: 992px) {
+
+/* Hide cover page picture */
+.coverPicture {
+    display: none;
+}
+
+.picture {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 630px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Animation Styles for cover page picture */
+.picture .blocks {
+    position: relative;
+    display: block;
+    width: 101px;
+    height: 101px;
+    animation: animate 0.75s ease-in-out forwards;
+    margin: auto
+}
+
+/* Every even block - animation time is 0.7s */
+.picture .blocks:nth-child(even) {
+    animation: animate 0.7s ease-in-out forwards;
+}
+
+/* Every even 7nth + 3 block - animation time is 1.3 */
+.picture .blocks:nth-child(7n+3) {
+    animation: animate 1.3s ease-in-out forwards;
+}
+
+/* Every even 7nth + 7 block - animation time is 1.3 */
+.picture .blocks:nth-child(7n+7) {
+    animation: animate 1s ease-in-out forwards;
+}
+
+/* Picture animation (@keyframes - specifies an animation code)*/ 
+@keyframes animate {
+    /* 0%, 50% and 100% are blocks of a background image of my cover page picture */
+    0% {
+        opacity: 0;
+        transform: scale(0) translateY(1000px);
+    }
+
+    50% {
+        opacity: 1;
+        background: url(../images/ca_picofme.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    100% {
+        opacity: 1;
+        background: url(../images/ca_picofme.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+}
+}
+
+/* Fading text animation Styles */
+.active{
+    animation: fade 1.3s linear forwards;
+}
+
+/* Fading text animation */
+@keyframes fade {
+    0% {
+        opacity: 1;
+        filter: blur(0);
+    }
+    100% {
+        opacity: 0.1;
+        color: blue;
+        filter: blur(10px);
+    }
+}
+

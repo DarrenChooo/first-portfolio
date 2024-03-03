@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+/*
+Website for FED CA1 Assignment - General CSS
+Author : Darren Choo
+Date : 8/4/2021
+
+Filename: layout.css
+*/
+
+/* Website Styles (External Font) */
+body  {
+    background-color: #9bccfd; 
+    font-family: 'Autour One', cursive;
+    font-weight: bold;
+}
+
+/* Navigation Styles */
+.navbar-nav li  a:hover {   
+    color: pink;
+} 
+
+/* Back to top button Styles */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 25px;
+    border: none;
+    background-color: #3e9bf8;
+    color: white;
+    cursor: pointer;
+    background-image: url(../images/icon-256x256.png);
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+/* Custom Hamburger icon */
+/* Set the border color */
+.custom-toggler.navbar-toggler {
+    border-color: #ffdad8;
+}
+
+/* Setting the stroke to pink using rgb values */
+.custom-toggler .navbar-toggler-icon {
+    background-image: url(
+    "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(232, 121, 146)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* Footer Styles */
+footer a img {
+    width: 9%;
+}
+
+ol {
+    list-style-type: none;
+}
+
+footer div * , footer a:hover {
+    color: white;
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar{
+	width: 12px;
+	background-color: #9bccfd;
+}
+
+::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+    background: linear-gradient(to top, #ffdad8, rgb(240, 90, 90));
+}
+

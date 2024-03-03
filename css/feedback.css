@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/*
+Website for FED CA1 Assignment - Layout (Feedback Page) CSS
+Author : Darren Choo
+Date : 8/4/2021
+
+Filename: feedback.css
+*/
+
+/* CSS graphic effects - Radial gradient */
+body {
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, pink 39%, #ff4c89 100%);
+}
+
+/* CSS graphic effects - box shadow */
+.rectangle {
+    background: #9bccfd;
+    box-shadow: 2px 5px 16px 0px #0555b1;
+    border-radius: 3%;
+}
+
+/* CSS graphic effects - Linear gradient for radio buttons*/
+.customButton1 {
+    background: linear-gradient(90deg, #59ff91, #03d449);
+}
+
+.customButton2 {
+    background: linear-gradient(90deg, #ff7a70, #fc1200);
+}
+

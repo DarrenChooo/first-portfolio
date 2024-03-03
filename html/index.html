@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        Website for FED CA1 Assignment (Home Page) HTML
+        Author : Darren Choo
+        Date : 8/4/2021
+
+        Filename: index.html
+    -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="FED CA1 Assignment">
+    <meta name="author" content="Darren Choo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!--Website Title-->
+    <title>Home</title>
+
+    <!--External font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Autour+One&display=swap" rel="stylesheet"> 
+
+    <!--Linking of CSS files-->
+    <link href="../css/layout.css" rel= "stylesheet" >
+    <link href="../css/index.css" rel= "stylesheet" >
+</head>
+
+<body>
+    <!--
+        Navigation of the whole website - 1st part of home page.
+        For example, when clicked on 'Home' it will bring you to index.html, etc.
+    -->
+
+    <div class="container-fluid col-md-12 g-0">
+        <nav class="navbar bg-primary navbar-expand-sm">
+            <a class="navbar-brand ms-3" href= "../html/index.html"><img src= "../images/ca_logo.png"  alt="Darren Choo's Logo" width="160"/></a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMenu" 
+                    aria-controls="toggleMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+        <!--
+            At 'sm' breakpoint, navigation bar will collapsed forming a 'Hamburger' icon. 
+            This hamburger icon can be clicked to drop down the navigation bar for user using a phone landscape size.
+        -->
+        <div class="collapse navbar-collapse" id="toggleMenu">
+            <ul class="navbar-nav mt-md-1 text-light ms-auto">
+                <li><a class="nav-link text-md-center text-light mx-3" href="../html/index.html">Home</a></li>
+                <li><a class="nav-link text-md-center text-light mx-3" href="../html/myjourney.html">My Journey</a></li>
+                <li><a class="nav-link text-md-center text-light mx-3" href="../html/lifeatsp.html">Life at SP</a></li>
+                <li><a class="nav-link text-md-center text-light mx-3" href="../html/career.html">Career</a> </li>
+                <li><a class="nav-link text-md-center text-light mx-3" href="../html/feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+        </nav>
+    </div>
+
+    <!--Cover page picture of me - 2nd part of home page.-->
+    <img class="coverPicture w-100" src="../images/ca_picofme.jpg">
+
+        <div class="picture">
+            <div class="blocks"></div>
+        </div>
+
+    
+    <!--Gives a warm welcome to user - 3rd part of home page.-->
+    <div class="text-center col-md-12 col-sm-12 mt-5">
+    <p class="smokeText display-1 mb-3 d-inline-block ">Welcome !</p>
+        <div>
+            <p class="fs-4">This is a website made by me for my FED assignment.</p>
+            <p class="mb-5">Feel free to look around as I will be talking about my life and goals throughout my secondary school to polytechnic.</p>
+        </div>
+    </div>
+
+    <!--Using bootstrap grid system of rows to display contents in rows and columns.-->
+    <div class="container mt-5 col-md-12">
+        <div class="row row-cols-lg-2">
+        <!--Gives a brief description about me to the user - 4th part of home page.-->
+            <img class="col rounded-pill col-lg-6 col-md-12 col-sm-12" src="../images/ca_picofme2.jpg" alt="Picture of Me for About Me Part"/>
+            <div class="col text-center mt-5 col-lg-6 col-md-12 col-sm-12">
+                <img class="img-fluid w-75" src="../images/ca_aboutme.png" alt="Calligraphy text of About Me" />
+                    <p class="p-5 fs-4">
+                            My name is Darren Choo Jun Heng and I am turning 18 this year. 
+                            I like to play computer games, the games that I play are League of Legends and Valorant. 
+                            I am a Singapore Polytechnic (SP) student from the course of Diploma in common Infocomm Technology Program (DCITP). 
+                    </p>
+            </div>
+        </div>
+    </div>
+
+    <!--This is where i will talk about my Values, Interest and Personality (VIP) - 5th part of home page.This uses bootstrap 5 cards.-->
+    <div class="VIP">
+    <div class="container row row-cols-lg-3 row-cols-md-2 mx-auto mt-5">
+        <div class="card bg-transparent border-0">
+            <img class="w-25 mt-3 ms-3" src="../images/ca_value.png" alt=""/>
+            <div class="card-body">
+                <h5 class="card-title ms-3 fw-bold">Values:</h5>
+                <p class="card-text px-3 pt-2">
+                    The most important value to me is kindness. Being kind to others is valuable as kindness can spread among everyone, 
+                    it bounces off from one to another easily. Making people around us more empathetic. 
+                    It can be as simple as holding the door for someone! 
+                </p>
+            </div>
+        </div>
+
+        <div class="card bg-transparent border-0">
+            <img class="w-25 mt-3 ms-3" src="../images/ca_interest.png" alt=""/>
+            <div class="card-body">
+                <h5 class="card-title ms-3 fw-bold">Interest:</h5>
+                <p class="card-text px-3 pt-2">
+                    My interest in trading was first inspired when I wanted to learn how to generate cash while schooling 
+                    so I have extra pocket money for my use. 
+                    Moreover, I can use this money that I earned and put into investments for my retirement in the future.
+                </p>
+            </div>
+        </div>
+
+        <div class="card bg-transparent of border-0">
+            <img class="w-25 mt-3 ms-3" src="../images/ca_personality.png" alt=""/>
+            <div class="card-body">
+                <h5 class="card-title ms-3 fw-bold">Personality:</h5>
+                <p class="card-text px-3 pt-2">
+                    I am a thoughtful and positive person. When it comes to a conversation with a friend, 
+                    I try to understand them by being aware of their needs before engaging in talks. 
+                    Also, I like to spread positivity as I believe it brightens the day of people around me.
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <!--This is a back top top function, explanation will be in javascript file.-->
+    <button class="px-3 py-1 rounded rounded-circle" onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+    <footer>
+        <!--
+            Footer of the website, there are navigation links at the left for the user.
+            When user clicks on navigation links it will open in the same page,
+
+            Side note: I did not link my personal social media links and number to these navigation as i want to keep my social media private and number private. 
+            However, i linked the social medias to SP's as it is more beneficial for my target audience as they are more keen on SP than myself.
+            Also, the number is a fake number. (9876 1234)
+
+            but when user clicks on social media links (Instagram,Youtube) it will open in another page.
+            Also, under 'Contact Me' there is a number and an email, when clicked it will call the number or open the user mailto and mail to the email
+            - (last) part of Home page.
+        -->
+    <div class="row mt-5 bg-primary col-lg-12 g-0">
+        <div class="col-lg-3 col-md-12 text-lg-start text-center ms-lg-5 my-3">
+            <ol>
+                <li class="py-1"><a href="../html/index.html">Home</a></li>
+                <li class="py-1"><a href="../html/myjourney.html">My Journey</a></li>
+                <li class="py-1"><a href="../html/lifeatsp.html">Life at SP</a></li>
+                <li class="py-1"><a href="../html/career.html">Career</a> </li>
+                <li class="py-1"><a href="../html/feedback.html">Feedback</a></li>
+            </ol>
+        </div>
+
+            <div class="col-lg-5 col-md-12 text-center mt-5">
+                <a class="mx-2" href="https://www.instagram.com/singaporepoly/" target="_blank">
+                    <img src="../images/ca_instagram.png" alt="Instagram Logo"></a>
+                    <!-- Image for instagram logo above - https://www.flaticon.com/free-icon/instagram_2111491 -->
+                <a class="mx-2" href="https://t.me/singaporepoly" target="_blank">
+                    <img src="../images/ca_telegram.png" alt="Telegram Logo"></a>
+                    <!-- Image for telegram logo above - https://www.flaticon.com/free-icon/telegram_2111812?term=telegram&page=1&position=12&page=1&position=12&related_id=2111812&origin=search -->
+                <a class="mx-2" href="https://www.youtube.com/singaporepolytechnic" target="_blank">
+                    <img src="../images/ca_youtube.png" alt="Youtube Logo"></a>
+                    <!-- Image for youtube logo above - https://www.flaticon.com/free-icon/youtube_1077046?term=youtube&page=1&position=5&page=1&position=5&related_id=1077046&origin=search -->
+                <a class="mx-2" href="https://twitter.com/SingaporePoly?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                    <img src="../images/ca_twitter.png" alt="Twitter Logo"></a> 
+                    <!-- Image for twitter logo above - https://www.flaticon.com/free-icon/twitter_2111819?term=twitter&page=1&position=12&page=1&position=12&related_id=2111819&origin=search -->
+                    <hr class="text-light">
+                <p>
+                    &copy; 2021 Darren Choo
+                </p>     
+            </div>  
+    
+            <div class="col-lg-3 col-md-12 ms-lg-5 mt-5 text-center">
+                <p class="fs-5">
+                    Contact Me
+                </p>
+                <p>
+                    <a class="text-decoration-none" href= "tel:+6598761234">9876 1234</a>
+                </p>
+                <p>
+                    <a class="text-decoration-none" href= "mailto:DARRENCHOO.20@ichat.sp.edu.sg">DARRENCHOO.20@ichat.sp.edu.sg</a>
+                </p>
+            </div>
+    </div>
+    </footer>
+    
+    <!--Linking of Javascript files-->
+    <script src="../js/backToTop.js"></script>
+    <script src="../js/pictureAnimation.js"></script>
+    <script src="../js/fadeText.js"></script>
+
+    <!--Bootstrap Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+
+</html>
+

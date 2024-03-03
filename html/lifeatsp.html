@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        Website for FED CA1 Assignment (Life at SP page) HTML
+        Author : Darren Choo
+        Date : 8/4/2021
+
+        Filename: lifeatsp.html
+    -->
+    <meta charset="UTF-8">
+    <meta name="description" content="FED CA1 Assignment">
+    <meta name="author" content="Darren Choo">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!--Website Title-->
+    <title>Life at SP</title>
+
+    <!--External Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Autour+One&display=swap" rel="stylesheet"> 
+
+    <!--Linking of CSS files-->
+    <link href="../css/layout.css" rel= "stylesheet" >
+    <link href="../css/lifeatsp.css" rel="stylesheet">
+</head> 
+
+<body>
+    <!--
+        Navigation of the whole website - 1st part of Life at SP page.
+        For example, when clicked on 'Home' it will bring you to index.html, etc.
+    -->
+
+    <div class="container-fluid col-md-12 g-0">
+        <nav class="navbar bg-primary navbar-expand-sm">
+            <a class="navbar-brand ms-3" href= "../html/index.html"><img src= "../images/ca_logo.png"  alt="Darren Choo's Logo" width="160"/></a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMenu" 
+                    aria-controls="toggleMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+        <!--
+            At 'sm' breakpoint, navigation bar will collapsed forming a 'Hamburger' icon. 
+            This hamburger icon can be clicked to drop down the navigation bar for user using a phone landscape size.
+        -->
+        <div class="collapse navbar-collapse" id="toggleMenu">
+            <ul class="navbar-nav mt-md-1 text-light ms-auto">
+                <li><a class="nav-link text-md-center text-light mx-3" href="../html/index.html">Home</a></li>
+                <li><a class="nav-link text-md-center text-light mx-3" href="../html/myjourney.html">My Journey</a></li>
+                <li><a class="nav-link text-md-center text-light mx-3" href="../html/lifeatsp.html">Life at SP</a></li>
+                <li><a class="nav-link text-md-center text-light mx-3" href="../html/career.html">Career</a> </li>
+                <li><a class="nav-link text-md-center text-light mx-3" href="../html/feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+        </nav>
+    </div>
+
+    <!-- 
+        1st container to differentiate in Life at SP page.
+        Talks about my experience in PFP at SP.
+        It uses bootstrap grid system to help me sort my contents in my website.
+        Part of the information found in Singapore Polytechnic's website on PFP - https://www.sp.edu.sg/ms/courses/polytechnic-foundation-programme-(pfp)/overview#:~:text=The%20Polytechnic%20Foundation%20Programme%20
+    -->
+    <div class="container">
+        <div class="row row-cols-md-2 align-items-center mx-lg-5 mt-5 ">
+            <div class="col">
+                <h1 class="mb-4">In PFP</h1>
+                <div class="mb-5">
+                <p>
+                    PFP is a programme for the top Normal (Academic) students. Students enrolled into PFP will skip the fifth year of secondary school 
+                    and be admitted into the polytechnic.
+                </p>
+                <p>
+                    In my PFP year, it was exciting as we have a range of modules for us, 
+                    such as science, programming and effective communication modules. 
+                </p>
+                <p>  
+                    There was a project where we gather in groups of 5 to make a prototype on aiding people on how to play chess. 
+                </p>
+                </div>
+            </div>
+            <figure class="col-lg-4 offset-lg-2">
+                <img class="w-100 rounded-3" src="../images/ca_prototype.png" alt="Picture of prototype" />
+                <figcaption class="mt-md-4">Figure: Cardboard prototype of assisting people with chess.</figcaption>
+            </figure>
+
+            <!--Modal feature from Bootstrap 5-->
+            <button type="button" class="btn btn-primary col-lg-2 col-md-3 offset-lg-9 offset-md-7 mt-lg-2" data-bs-toggle="modal" data-bs-target="#firstModal">
+                Fun Fact
+            </button>
+            <div class="modal fade" id="firstModal" tabindex="-1" aria-labelledby="Modal1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="Modal1">Fun Fact:</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    <div class="modal-body">
+                        These are microbits coded with Python!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>       
+
+    <!--
+        2nd container to differentiate in Life at SP page.
+        Talks about My current experience in SP.
+    -->
+    <div class="container">
+        <div class="row row-cols-md-2 align-items-center mx-lg-5 mt-5"> 
+            <figure class="col-lg-4">
+                <img class="w-100 rounded-3" src= "../images/ca_picofmeandfriends.jpg" alt="Picture of a me and friends in SP" />
+                <figcaption class="mt-4">Figure: Picture of me and my friends in SP.</figcaption>
+            </figure>
+    <div class="col offset-lg-2">
+        <h1 class="mb-4 ">My Poly Life</h1>
+            <div class="mb-5">
+                <p>
+                    Currently, I am a student under the School of Computing (SOC). In the course of DCITP, 
+                    I learn about programming with javascript and how to make fascinating websites with HTML and CSS. 
+                </p>
+                <p>
+                    Also, I have learnt how to communicate effectively which is very important in the real-world of adulting. 
+                    I have made many friends throughout the semester and forged memorable experiences with them.
+                    </p>
+            </div>
+    </div>
+
+    <!--Modal feature from Bootstrap 5-->
+    <button type="button" class="btn btn-primary col-lg-2 col-md-3 offset-md-1" data-bs-toggle="modal" data-bs-target="#secondModal">
+        Fun Fact
+    </button>
+    <div class="modal fade" id="secondModal" tabindex="-1" aria-labelledby="Modal2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Modal2">Fun Fact:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            <div class="modal-body">
+                These are my first few friends in Year 1!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>  
+
+    <!--
+        This is where i talk about why students that are interested in the sector of IT should join SOC in SP. - 3rd part of Life at SP page.
+    -->
+    <header class="whySOC">
+        <!-- Below information is from Singapore Polytechnic's Website on About Soc - https://www.sp.edu.sg/soc/about-soc -->
+        <div class="col-7 mx-auto mt-5 mb-5">
+            <h1 class="mb-4 ">Why SOC</h1>
+            <p>
+                The world today is fast changing at this current state due to the advancements of technology. 
+                Singapore's economy will slowly transit with the new digital innovations. 
+                Our nation will expect to grow into a field of technology, data analytics and artificial intelligence, 
+                cybersecurity and app developments. 
+            </p>
+            <p>
+                With your appearance in SOC, it opens up many pathways of jobs for your future. 
+                The school will assist you in learning and discovering as many new skills as possible, 
+                ensuring that you will set in the right attitude and the best capabilities you have for your lifelong journey. 
+            </p>
+        </div>
+    </header>
+
+    <!--
+        This is a youtube video from SP's About SOC website. This video gives a brief description about SOC in SP. - 4th part of Life at SP page.
+        This video is from the link https://www.youtube.com/watch?v=Lm8Yay2Q5Pk
+    -->
+
+    <div class="col text-center">
+        <h1>Video from SOC's Director</h1>
+        <p class="fs-5">
+            Watch this video to learn more!
+        </p>
+        <div class="w-75 mx-auto ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/Lm8Yay2Q5Pk"></iframe>
+        </div>
+        
+    </div> 
+
+    <!--This is a back top top function, explanation will be in javascript file.-->
+    <button class="px-3 py-1 rounded rounded-circle" onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+    <footer>
+        <!--
+            Footer of the website, there are navigation links at the left for the user.
+            When user clicks on navigation links it will open in the same page,
+
+            Side note: I did not link my personal social media links and number to these navigation as i want to keep my social media private and number private. 
+            However, i linked the social medias to SP's as it is more beneficial for my target audience as they are more keen on SP than myself.
+            Also, the number is a fake number. (9876 1234)
+
+            but when user clicks on social media links (Instagram,Youtube) it will open in another page.
+            Also, under 'Contact Me' there is a number and an email, when clicked it will call the number or open the user mailto and mail to the email
+            - (last) part of Life at SP page.
+        -->
+    <div class="row mt-5 bg-primary col-lg-12 g-0">
+        <div class="col-lg-3 col-md-12 text-lg-start text-center ms-lg-5 my-3">
+            <ol>
+                <li class="py-1"><a href="../html/index.html">Home</a></li>
+                <li class="py-1"><a href="../html/myjourney.html">My Journey</a></li>
+                <li class="py-1"><a href="../html/lifeatsp.html">Life at SP</a></li>
+                <li class="py-1"><a href="../html/career.html">Career</a> </li>
+                <li class="py-1"><a href="../html/feedback.html">Feedback</a></li>
+            </ol>
+        </div>
+
+            <div class="col-lg-5 col-md-12 text-center mt-5">
+                <a class="mx-2" href="https://www.instagram.com/singaporepoly/" target="_blank">
+                    <img src="../images/ca_instagram.png" alt="Instagram Logo"></a>
+                    <!-- Image for instagram logo above - https://www.flaticon.com/free-icon/instagram_2111491 -->
+                <a class="mx-2" href="https://t.me/singaporepoly" target="_blank">
+                    <img src="../images/ca_telegram.png" alt="Telegram Logo"></a>
+                    <!-- Image for telegram logo above - https://www.flaticon.com/free-icon/telegram_2111812?term=telegram&page=1&position=12&page=1&position=12&related_id=2111812&origin=search -->
+                <a class="mx-2" href="https://www.youtube.com/singaporepolytechnic" target="_blank">
+                    <img src="../images/ca_youtube.png" alt="Youtube Logo"></a>
+                    <!-- Image for youtube logo above - https://www.flaticon.com/free-icon/youtube_1077046?term=youtube&page=1&position=5&page=1&position=5&related_id=1077046&origin=search -->
+                <a class="mx-2" href="https://twitter.com/SingaporePoly?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                    <img src="../images/ca_twitter.png" alt="Twitter Logo"></a> 
+                    <!-- Image for twitter logo above - https://www.flaticon.com/free-icon/twitter_2111819?term=twitter&page=1&position=12&page=1&position=12&related_id=2111819&origin=search -->
+                    <hr class="text-light">
+                <p>
+                    &copy; 2021 Darren Choo
+                </p>     
+            </div>  
+    
+            <div class="col-lg-3 col-md-12 ms-lg-5 mt-5 text-center">
+                <p class="fs-5">
+                    Contact Me
+                </p>
+                <p>
+                    <a class="text-decoration-none" href= "tel:+6598761234">9876 1234</a>
+                </p>
+                <p>
+                    <a class="text-decoration-none" href= "mailto:DARRENCHOO.20@ichat.sp.edu.sg">DARRENCHOO.20@ichat.sp.edu.sg</a>
+                </p>
+            </div>
+    </div>
+    </footer>
+    
+    <!--Linking of Javascript files-->
+    <script src="../js/backToTop.js"></script>
+
+    <!--Bootstrap Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+
+</html>
